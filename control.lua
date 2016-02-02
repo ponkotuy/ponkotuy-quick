@@ -4,14 +4,12 @@ if remote.interfaces.freeplay then
     script.on_event( defines.events.on_player_created, function( event )
         --[[ DATA ]]
         local items =
-	        {   {"basic-transport-belt", 100}
-            ,   {"basic-transport-belt-to-ground", 4}
-            ,   {"basic-splitter", 4}
+	        {   {"basic-transport-belt", 200}
 
-            ,   {"basic-inserter", 20}
+            ,   {"basic-inserter", 50}
             ,   {"iron-chest", 4}
 
-            ,   {"iron-plate", 150}
+            ,   {"iron-plate", 200}
             ,   {"coal", 50}
             ,   {"copper-plate", 100}
             ,   {"stone", 50}
@@ -21,15 +19,16 @@ if remote.interfaces.freeplay then
             ,   {"basic-armor", 1}
             ,   {"iron-axe", 1}
 
-            ,   {"basic-mining-drill", 2}
-            ,   {"stone-furnace", 4}
-            ,   {"assembling-machine-1", 2}
+            ,   {"basic-mining-drill", 20}
+            ,   {"stone-furnace", 30}
+            ,   {"assembling-machine-1", 10}
 
-            ,   {"boiler", 3}
-            ,   {"small-electric-pole", 32}
-            ,   {"steam-engine", 2}
-            ,   {"pipe", 32}
-            ,   {"offshore-pump", 1}
+            ,   {"boiler", 20}
+            ,   {"small-electric-pole", 50}
+            ,   {"steam-engine", 10}
+            ,   {"pipe", 50}
+            ,   {"offshore-pump", 2}
+            ,   {"raw-wood", 50}
             }
 
         local tech =
