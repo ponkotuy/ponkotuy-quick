@@ -1,6 +1,8 @@
-{   "name": "ponkotuy-quick"
-,   "version": "0.2.0"
-,   "title": "Ponkotuy's Quick Start"
-,   "author": "Undermind, ponkotuy"
-,   "description": "With this mod you begin freeplay with some resources, buildings and technologies."
+{
+  "name": "ponkotuy-quick",
+  "version": "0.3.0",
+  "factorio_version": "0.13",
+  "title": "Ponkotuy's Quick Start",
+  "author": "Undermind, ponkotuy",
+  "description": "With this mod you begin freeplay with some resources, buildings and technologies."
 }

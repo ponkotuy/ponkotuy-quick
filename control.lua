@@ -1,12 +1,10 @@
-require "defines"
 
-if remote.interfaces.freeplay then
     script.on_event( defines.events.on_player_created, function( event )
         --[[ DATA ]]
         local items =
-	        {   {"basic-transport-belt", 200}
+	        {   {"transport-belt", 200}
 
-            ,   {"basic-inserter", 50}
+            ,   {"inserter", 50}
             ,   {"iron-chest", 4}
 
             ,   {"iron-plate", 200}
@@ -15,11 +13,11 @@ if remote.interfaces.freeplay then
             ,   {"stone", 50}
 
             ,   {"submachine-gun", 1}
-            ,   {"basic-bullet-magazine", 25}
-            ,   {"basic-armor", 1}
+            ,   {"piercing-rounds-magazine", 25}
+            ,   {"heavy-armor", 1}
             ,   {"iron-axe", 1}
 
-            ,   {"basic-mining-drill", 20}
+            ,   {"electric-mining-drill", 20}
             ,   {"stone-furnace", 30}
             ,   {"assembling-machine-1", 10}
 
@@ -43,7 +41,7 @@ if remote.interfaces.freeplay then
             }
 
         --[[ CODE ]]
-        local player = game.get_player( event.player_index )
+        local player = game.players[event.player_index]
         player.clear_items_inside()
         for i, v in pairs(items) do
             player.insert{name = v[1], count = v[2]}
@@ -55,4 +53,3 @@ if remote.interfaces.freeplay then
             player.force.recipes[v].enabled = true
         end
     end )
-end
